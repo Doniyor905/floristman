@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Floristman pet project
+
+Pet project for students.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
