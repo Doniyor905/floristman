@@ -2,6 +2,7 @@ import React from 'react'
 import classes from "./CategoriesBlock.module.scss"
 import Container from '../../layout/Container'
 import categories from '../../routes/categories'
+import { Link } from 'react-router-dom'
 
 
 const CategoriesBlock = () => {
@@ -10,7 +11,7 @@ const CategoriesBlock = () => {
         {categories.map(category => (
             <div className={classes['categories__item']}>
                 <img className={classes["categories__image"]} src={category.img} alt={category.text} />
-                <a className={classes["categories__button"]} href={category.link}>{category.text}</a>
+                <Link to="/category" className={classes["categories__button"]} href={category.link}>{category.text}</Link>
             </div>
         ))}
     </Container>
