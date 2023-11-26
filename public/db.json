@@ -1,4 +1,68 @@
 {
+    "discounts": [{
+            "id": 0,
+            "name": "Basket No 1",
+            "category": "flowers",
+            "images": [
+                "https://toshkentgullari.uz/thumb/2/27vEFLnhhAasXn51U4ij7Q/400r400/d/img_0105.jpg",
+                "https://toshkentgullari.uz/d/img_0107_2.jpg"
+            ],
+            "price": 50,
+            "discount": 100
+        },
+        {
+            "id": 14,
+            "name": "Fruit Cart No 3",
+            "category": "fruits",
+            "images": [
+                "http://cdn.shopify.com/s/files/1/1507/9940/products/Deluxe-Fruit-Basket-10-Types-of-Fruits-Fruit-Basket_1200x1200.jpg?v=1634579686"
+            ],
+            "price": 7000,
+            "discount": 4000
+        },
+        {
+            "id": 1,
+            "name": "Basket No 2",
+            "category": "flowers",
+            "images": [
+                "https://toshkentgullari.uz/thumb/2/v5yws9Qo8yUwrslJ8T1Rlw/400r400/d/img_0061_2.jpg"
+            ],
+            "price": 150,
+            "discount": 200
+        },
+        {
+            "id": 2,
+            "name": "Basket No 3",
+            "category": "flowers",
+            "images": [
+                "https://toshkentgullari.uz/thumb/2/bcq_weLLp_Y7KRshIYShcw/400r400/d/img_8174.jpg",
+                "https://toshkentgullari.uz/thumb/2/F_bfRRbLjmWtyIEDV5McOA/400r400/d/img_8175.jpg"
+            ],
+            "price": 120,
+            "discount": 150
+        },
+        {
+            "id": 3,
+            "name": "Basket No 4",
+            "category": "flowers",
+            "images": [
+                "https://toshkentgullari.uz/thumb/2/jTsCcZtlM6PLQx-fqtiMbA/400r400/d/img_8933.jpg",
+                "https://toshkentgullari.uz/thumb/2/_JklaBmhVedLegUrFihykA/400r400/d/img_8934.jpg"
+            ],
+            "price": 200,
+            "discount": 300
+        },
+        {
+            "id": 11,
+            "name": "Balloon No 4",
+            "category": "balloons",
+            "images": [
+                "https://m.media-amazon.com/images/I/51QliHi9pqL._AC_SL1000_.jpg"
+            ],
+            "price": 7000,
+            "discount": 4000
+        }
+    ],
     "products": [
         {
             "id": 0,

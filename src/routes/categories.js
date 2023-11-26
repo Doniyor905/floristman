@@ -19,12 +19,12 @@ const categories = [
     },
     {
         text: "Fruit Carts",
-        link: "/category/fruit",
+        link: "/category/fruits",
         img: fruit
     },
     {
         text: "Air Baloons",
-        link: "/category/baloons",
+        link: "/category/balloons",
         img: balloons
     },
     {

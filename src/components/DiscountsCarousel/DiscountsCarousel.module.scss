@@ -1,0 +1,14 @@
+@import "../../theme.scss";
+.discounts {
+    // display: flex;
+
+    &__title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        color: $black;
+        margin-bottom: 30px;
+    }
+}
+
