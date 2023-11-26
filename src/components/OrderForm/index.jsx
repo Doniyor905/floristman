@@ -9,7 +9,7 @@ import { validateName, validatePhoneContent, validatePhoneNumber, validateText }
 const initialData = {
   name: "",
   tel: "",
-  text: ""
+  text: "",
 }
 
 const OrderForm = () => {
