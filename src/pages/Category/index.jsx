@@ -8,22 +8,14 @@ import DiscountsCarousel from '../../components/DiscountsCarousel'
 import { useSelector } from 'react-redux'
 import categories from '../../routes/categories'
 import Title from '../../components/Title'
+import useGetData from '../../hooks/useGetData'
 
 const Category = () => {
   const { type } = useParams();
-  const [data, setData] = React.useState(null);
   const { like, cart:cartItems } = useSelector((state) => state)
   const { pathname } = useLocation()
+  const [data] = useGetData(`floristamn_items?category=${type}`)
   const {text: title} = categories.find((item) => item.link === pathname)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/floristamn_items?category=${type}`);
-      const cards = await res.json()
-      setData(cards)
-    }
-    fetchData()
-  }, [type])
   return (
     <>
       <Header />

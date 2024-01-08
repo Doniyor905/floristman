@@ -10,21 +10,11 @@ import 'swiper/css/navigation';
 import "./DiscountsCarousel.styles.scss"
 import {Navigation} from "swiper/modules"
 import { useSelector } from 'react-redux';
+import useGetData from '../../hooks/useGetData';
 
 const DiscountsCarousel = () => {
-  const [data, setData] = React.useState(null);
   const {like, cart:cartItems} = useSelector((state) => state)
-
-  useEffect(() => {
-    const fetchaData = async () => {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/floristman_discounts`);
-      const discounts = await res.json();
-      setData(discounts);
-    }
-
-    fetchaData()
-  }, [])
-
+  const [data] = useGetData('floristman_discounts')
 
   return (
     <Container className={classes['discounts']}>

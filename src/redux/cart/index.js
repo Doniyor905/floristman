@@ -8,7 +8,10 @@ const cartSlice = createSlice({
     reducers: {
         addToCart: (state, action) => {
             state[action.payload.id] = action.payload
-            state[action.payload.id].quantity = 1
+            state[action.payload.id] = {
+                ...action.payload,
+                quantity: 1,
+            }
             saveToLocalStorage(state)
         },
         removeFromCart: (state, action) => {
